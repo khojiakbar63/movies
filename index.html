@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!------- CSS link------->
+    <link rel="stylesheet" href="styles/style.css">
+    <!--    Favicon link-->
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <!--Exo font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Movie</title>
+</head>
+<body>
+<!---------------------------------------Header-------------------------------------->
+<header class="bg-[#FA7070] h-[80px] w-[100vw]">
+    <div class="container mx-auto px-[20px]">
+        <nav class="flex justify-between items-center leading-[80px]">
+            
+            <a href="#" class="w-[44px]"><img src="./public/n.png" alt="logo"></a>
+
+            <label for="global-search">
+                <input id="global-search" type="search" placeholder="Enter film title . . . " class='bg-[#FEFDED] h-12 w-[85%] sm:w-[320px]  mx-4 p-4 rounded-md focus:ring-4 focus:ring-[#A1C398] border-none outline-none placeholder-[#FA7070]' >
+            </label>
+
+            <ul class="flex items-center gap-[30px]">
+                
+                <li class="hidden lg:block">
+                    <div id="liked" class="flex items-center text-white gap-2">
+                        <span><img class="w-[28px]" src="./assets/icons/heart.svg" alt="heart"></span><span class="font-bold text-[32px] text-[#FEFDED]">- 0</span>
+                    </div>
+                </li>
+                
+                <li class="hidden md:block">
+                    <div id="theme-wrapper">
+                        <input type="checkbox" id="theme">
+                    </div>
+                </li>
+                
+                <li class="hidden sm:block">
+                    <div id="lang-wrapper">
+                        <select id="lang" class="rounded">
+                            <option value="en">English</option>
+                            <option value="en">Korean</option>
+                            <option value="en">Arabic</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!---------------------------------------Main-------------------------------------->
+<main class="flex">
+<!----------------------------------Sidebar-------------------------------------->
+    <aside id="sidebar" class=" w-[250px] h-screen bg-[#FA7070]">
+        <form action="#" class="p-2 text-[#FEFDED]">
+            <label for="film-name">
+                <p>Enter film title:</p>
+                <input class="input-style placeholder-[#FA7070]" placeholder="Enter film title" type="search" id="film-name">
+            </label>
+
+            <label for="film-rating">
+                <p>Choose rating:</p>
+                <input  class="input-style placeholder-[#FA7070]" placeholder="1-10" type="number" id="film-rating" min="1" max="10">
+            </label>
+
+            <label for="genres">
+                <p>Select genre:</p>
+                <select  class="input-style placeholder-[#FA7070]" id="genres">
+                    <option class="text-red" selected disabled>Select a genre . . .</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="western">Western</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="crime">Crime</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="animation">Animation</option>
+                    <option value="documentary">Documentary</option>
+                    <option value="family">Family</option>
+                    <option value="kids">Kids</option>
+                    <option value="news">News</option>
+                    <option value="sport">Sport</option>
+                    <option value="war">War</option>
+                    <option value="biography">Biography</option>
+                    <option value="history">History</option>
+                    <option value="music">Music</option>
+                    <option value="music">Musical</option>
+                </select>
+            </label>
+
+            <button type="submit" class="transition duration-[0.2s] hover:bg-[#C6EBC5] hover:text-[#FA7070] px-4 py-1 mt-4 bg-[#A1C398] rounded w-[100%]">Search</button>
+        </form>
+    </aside>
+
+<!----------------------------------Content-------------------------------------->
+    <section id="content">
+        <div class="container">
+            <div class="cards p-2">
+
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/id/570/250/180" alt="img">
+                    </div>
+                    <div class="card-body">
+                        <h2>Umar ibn Khattob</h2>
+                        <ul>
+                            <li><strong>Year: </strong><span>2004</span></li>
+                            <li><strong>Rating: </strong><span>10</span></li>
+                            <li><strong>Language: </strong><span>Arab</span></li>
+                            <li><strong>Genre: </strong><span>Islamic</span></li>
+                            <li><strong>Time: </strong><span>2h, 34m</span></li>
+                        </ul>
+                        <div class="buttons">
+                            <button>Read more</button>
+                            <button class="like-btn"><img src="assets/icons/heart.svg" alt="heart"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="p-4 bg-[#FA7070]">
+    <div class="container">
+        <p class="text-center text-bold text-[24px] text-white"><span id="year">2024</span> &copyCopyright All movies</p>
+    </div>
+</footer>
+
+
+
+<!--------------------------------------Javascript links-------------------------------->
+    <script src="js/db.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
