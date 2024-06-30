@@ -17,7 +17,7 @@
 </head>
 <body>
 <!---------------------------------------Header-------------------------------------->
-<header class="bg-[#FA7070] h-[80px] w-[100vw]">
+<header class="bg-[#FA7070] h-[80px] w-[100vw] fixed z-[999]">
     <div class="container mx-auto px-[20px]">
         <nav class="flex justify-between items-center leading-[80px]">
             
@@ -59,8 +59,8 @@
 <!---------------------------------------Main-------------------------------------->
 <main class="flex">
 <!----------------------------------Sidebar-------------------------------------->
-    <aside id="sidebar" class=" w-[250px] h-screen bg-[#FA7070]">
-        <form action="#" class="p-2 text-[#FEFDED]">
+    <aside id="sidebar" class=" w-[250px] h-screen bg-[#FA7070] pt-[80px]">
+        <form action="#" class="p-2 text-[#FEFDED] flex flex-column gap-[20px]">
             <label for="film-name">
                 <p>Enter film title:</p>
                 <input class="input-style placeholder-[#FA7070]" placeholder="Enter film title" type="search" id="film-name">
@@ -106,29 +106,10 @@
     </aside>
 
 <!----------------------------------Content-------------------------------------->
-    <section id="content">
+    <section id="content" class="pt-[80px]">
         <div class="container">
-            <div class="cards p-2">
+            <div id="cards" class="p-2 grid  grid-cols-5 gap-2">
 
-                <div class="card">
-                    <div class="card-img">
-                        <img src="https://picsum.photos/id/570/250/180" alt="img">
-                    </div>
-                    <div class="card-body">
-                        <h2>Umar ibn Khattob</h2>
-                        <ul>
-                            <li><strong>Year: </strong><span>2004</span></li>
-                            <li><strong>Rating: </strong><span>10</span></li>
-                            <li><strong>Language: </strong><span>Arab</span></li>
-                            <li><strong>Genre: </strong><span>Islamic</span></li>
-                            <li><strong>Time: </strong><span>2h, 34m</span></li>
-                        </ul>
-                        <div class="buttons">
-                            <button>Read more</button>
-                            <button class="like-btn"><img src="assets/icons/heart.svg" alt="heart"></button>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -145,8 +126,8 @@
 
 
 <!--------------------------------------Javascript links-------------------------------->
-    <script src="js/db.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/db.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

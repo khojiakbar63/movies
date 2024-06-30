@@ -79,17 +79,23 @@ body {
 }
 /*--------Card style ---------*/
 .card {
-    width: 100%;
-    height: 100%;
+    max-width: 300px;
+    max-height: 520px;
     border-radius: 4px;
     background-color: #ffffff;
     color: #e88c8c;
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
+.card .card-img img {
+    height: 230px;
+    object-fit: cover;
+}
+.card:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 18px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 .card .card-body h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     color: #000;
 }
