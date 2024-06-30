@@ -20,10 +20,19 @@ let normalizeData = someData.map((movie) => {
 
 // Rendering
 function renderData(data) {
-    if(data.length){
-        data?.forEach((el) => {
+    cardsGrid.innerHTML = `
+        <div class="loader-wrapper">
+            <div class="loader"></div> 
+        </div>
+`;
+    setTimeout(()=>{
+        if(data.length){
 
-            const card = createElement('div', 'card', `
+            cardsGrid.innerHTML = ''
+
+            data?.forEach((el) => {
+
+                const card = createElement('div', 'card', `
 
                 <div class="card-img">
                         <img src="${el.bigImg}" alt="img">
@@ -44,10 +53,13 @@ function renderData(data) {
                         </div>
                     </div>
             `)
-            cardsGrid.appendChild(card)
+                cardsGrid.appendChild(card)
 
-        })
-    }
+            })
+        } else{
+            cardsGrid.innerHTML = `<h1 class="text-red">ERROR 404 DATA NOT FOUND!!!</h1>`
+        }
+    }, 2000)
 
 }
 
