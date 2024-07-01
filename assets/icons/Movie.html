@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://localhost:63342/Movies/index.html?# -->
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Tailwind css  -->
+    <script src="./Movie_files/saved_resource"></script>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="./Movie_files/all.min.css">
+    <!--    Favicon link-->
+    <link rel="shortcut icon" href="http://localhost:63342/Movies/public/favicon.png" type="image/x-icon">
+    <!--Exo font family-->
+    <link href="./Movie_files/css2" rel="stylesheet">
+    <!--Bootstrap link-->
+    <link href="./Movie_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!------- CSS link------->
+    <link rel="stylesheet" href="./Movie_files/style.css">
+
+    <title>Movie</title>
+<style>/* ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.sticky{position:sticky}.left-0{left:0px}.top-0{top:0px}.z-\[9999999\]{z-index:9999999}.m-0{margin:0px}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-4{margin-top:1rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-\[80px\]{height:80px}.h-screen{height:100vh}.w-\[100\%\]{width:100%}.w-\[100vw\]{width:100vw}.w-\[250px\]{width:250px}.w-\[85\%\]{width:85%}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-\[20px\]{gap:20px}.gap-\[30px\]{gap:30px}.rounded{border-radius:0.25rem}.rounded-md{border-radius:0.375rem}.border-none{border-style:none}.bg-\[\#A6B1E1\]{--tw-bg-opacity:1;background-color:rgb(166 177 225 / var(--tw-bg-opacity))}.bg-\[\#FA7070\]{--tw-bg-opacity:1;background-color:rgb(250 112 112 / var(--tw-bg-opacity))}.bg-\[\#FEFDED\]{--tw-bg-opacity:1;background-color:rgb(254 253 237 / var(--tw-bg-opacity))}.p-2{padding:0.5rem}.p-4{padding:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-\[20px\]{padding-left:20px;padding-right:20px}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pt-\[80px\]{padding-top:80px}.text-center{text-align:center}.text-\[24px\]{font-size:24px}.text-\[32px\]{font-size:32px}.text-\[42px\]{font-size:42px}.font-bold{font-weight:700}.leading-\[80px\]{line-height:80px}.text-\[\#424874\]{--tw-text-opacity:1;color:rgb(66 72 116 / var(--tw-text-opacity))}.text-\[\#FEFDED\]{--tw-text-opacity:1;color:rgb(254 253 237 / var(--tw-text-opacity))}.text-\[\#fff\]{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.placeholder-\[\#424874\]::placeholder{--tw-placeholder-opacity:1;color:rgb(66 72 116 / var(--tw-placeholder-opacity))}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-\[0\.2s\]{transition-duration:0.2s}.hover\:bg-\[\#DCD6F7\]:hover{--tw-bg-opacity:1;background-color:rgb(220 214 247 / var(--tw-bg-opacity))}.hover\:text-\[\#000\]:hover{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.hover\:text-\[\#597445\]:hover{--tw-text-opacity:1;color:rgb(89 116 69 / var(--tw-text-opacity))}.focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-\[\#A1C398\]:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(161 195 152 / var(--tw-ring-opacity))}@media (min-width: 640px){.sm\:block{display:block}.sm\:w-\[320px\]{width:320px}}@media (min-width: 768px){.md\:block{display:block}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style></head>
+<body>
+<!---------------------------------------Header-------------------------------------->
+<header id="header" class="h-[80px] w-[100vw] fixed z-[9999999]">
+    <div class="container mx-auto px-[20px]">
+        <nav class="flex justify-between items-center leading-[80px]">
+            
+            <a href="http://localhost:63342/Movies/index.html?#"><i class="fa-brands fa-vimeo-v text-[42px] text-[#fff] line-through"></i></a>
+
+            <label for="global-search">
+                <input id="global-search" type="search" placeholder="Enter film title . . . " class="bg-[#FEFDED] h-12 w-[85%] sm:w-[320px]  mx-4 p-4 rounded-md focus:ring-4 focus:ring-[#A1C398] border-none outline-none placeholder-[#424874]">
+            </label>
+
+            <ul class="flex items-center gap-[30px]">
+                
+                <li class="hidden lg:block likes-wrapper">
+                    <div id="liked" class="flex items-center text-white gap-2">
+                        <span><i id="header-heart" class="fa-regular fa-heart animate-pulse"></i></span>
+                        <span id="likes-count" class="font-bold text-[32px] text-[#FEFDED]">0</span>
+                    </div>
+                </li>
+                
+                <li class="hidden md:block">
+                    <div id="theme-wrapper">
+                        <input type="checkbox" id="theme">
+                    </div>
+                </li>
+                
+                <li class="hidden sm:block">
+                    <div id="lang-wrapper">
+                        <select id="lang" class="rounded">
+                            <option value="en">English</option>
+                            <option value="kr">Korean</option>
+                            <option value="ar">Arabic</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!---------------------------------------Main-------------------------------------->
+<main class="flex">
+<!----------------------------------Sidebar-------------------------------------->
+    <aside id="sidebar" class="hidden sm:block w-[250px] h-screen pt-[80px] sticky top-0 left-0">
+        <form action="http://localhost:63342/Movies/index.html?#" id="form" class="p-2 text-[#FEFDED] flex flex-column gap-[20px]">
+            <label for="film-name">
+                <p id="label-title">Enter film title:</p>
+                <input class="input-style placeholder-[#424874]" placeholder="Enter film title" type="search" id="film-name">
+            </label>
+
+            <label for="film-rating">
+                <p id="label-rating">Choose rating:</p>
+                <input class="input-style placeholder-[#424874]" placeholder="1-10" type="number" id="film-rating" min="1" max="10">
+            </label>
+
+            <label for="genres">
+                <p id="label-genre">Select genre:</p>
+                <select class="input-style placeholder-[#424874]" id="genres">
+                    <option id="option-text" class="text-[#424874]" selected="" disabled="">Select a genre . . .</option>
+                <option class="option">Uncategorized</option><option class="option">Documentary</option><option class="option">Music</option><option class="option">Adventure</option><option class="option">Animation</option><option class="option">Comedy</option><option class="option">Family</option><option class="option">Fantasy</option><option class="option">Horror</option><option class="option">Drama</option><option class="option">Sport</option><option class="option">Romance</option><option class="option">Action</option><option class="option">Sci-Fi</option><option class="option">News</option><option class="option">History</option><option class="option">Thriller</option><option class="option">Western</option><option class="option">Crime</option><option class="option">Mystery</option><option class="option">Biography</option><option class="option">Musical</option><option class="option">War</option></select>
+            </label>
+
+            <button id="multi-search-btn" type="submit" class="transition duration-[0.2s] hover:bg-[#DCD6F7] text-[#fff] hover:text-[#000] px-4 py-1 mt-4 bg-[#A6B1E1] rounded w-[100%]">Search</button>
+        </form>
+    </aside>
+
+<!----------------------------------Content-------------------------------------->
+    <section id="content" class="pt-[80px]">
+        <div class="container flex">
+            <div id="cards" class=" p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 m-0"><div class="card">
+                    <img src="./Movie_files/maxresdefault(2).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Mickey's Magical Chr...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2001</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Adventure,Animation,Comedy,Family,Fantasy" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 5m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="After everyone is snowed in at the House of Mouse, Mickey suggests they throw their own Christmas party. Everyone is happy, except for Donald who just isn&#39;t in to the Christmas spirit. So Mickey shows a series of cartoons that show just what Christmas is all about. It features a star studded cast of Disney characters from everyone&#39;s favorite animated Disney movies." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(4).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>And Then I Go...</h3>
+                        <strong>Rate:</strong><span>7.6</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 39m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="In the cruel world of junior high, Edwin suffers in a state of anxiety and alienation alongside his only friend, Flake. Misunderstood by their families and demoralized at school daily, their fury simmers quietly until an idea for vengeance offers them a terrifying release. Based on the acclaimed novel " project="" x"="" by="" jim="" shepard,="" this="" unflinching="" look="" at="" adolescence="" explores="" how="" the="" powerful="" bonds="" of="" childhood="" friendship="" and="" search="" for="" belonging="" can="" become="" a="" matter="" life="" or="" death."="" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(9).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Foster Boy...</h3>
+                        <strong>Rate:</strong><span>7.4</span> <br>
+                        <strong>Year:</strong><span>2011</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 47m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="The illegitimate orphan child, 12-year-old Max, is sold by the local minister for a basket of food to the Bösiger family, who own a mountain farm. Max&#39; initial hope of finally finding a loving home is brutally shattered: The farmer and his wife treat Max like livestock, and their son Jacob humiliates and abuses him. Only the local teacher notices the child suffering on the farm." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(12).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Secret Rules of ...</h3>
+                        <strong>Rate:</strong><span>7.5</span> <br>
+                        <strong>Year:</strong><span>2015</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>0h 58m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Professor Marcus du Sautoy demystifies the hidden world of algorithms and reveals where these 2,000-year-old problem solvers came from, how they work, and what they have achieved." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(13).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Secrets in the Fall...</h3>
+                        <strong>Rate:</strong><span>7.3</span> <br>
+                        <strong>Year:</strong><span>2015</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Family" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>0h 0m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Nothing is impossible for a group of young campers, friends and enemies alike, on a weekend retreat at Camp Pinnacle. But what starts as an exciting wilderness adventure turns into trouble when a young camper goes missing and the rest of the group must set out to find him. The campers are forced to overcome their differences and band together to re-claim their weekend and make it out of the woods before dark!" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(17).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Humanity Bureau...</h3>
+                        <strong>Rate:</strong><span>6.1</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Sci-Fi" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 35m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="A dystopian thriller set in the year 2030 that sees the world in a permanent state of economic recession and facing serious environmental problems as a result of global warming." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(21).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Andre the Giant...</h3>
+                        <strong>Rate:</strong><span>8.2</span> <br>
+                        <strong>Year:</strong><span>2018</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 25m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="A look at the life and career of professional wrestler André Roussimoff, who gained notoriety in the 1980s as Andre the Giant." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(27).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Maze Runner: The Dea...</h3>
+                        <strong>Rate:</strong><span>6.5</span> <br>
+                        <strong>Year:</strong><span>2018</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Sci-Fi,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 21m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="In the epic finale to The Maze Runner Saga, Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary last city, a WCKD controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get the answers to the questions the Gladers have been asking since they first arrived in the maze. Will Thomas and the crew make it out alive? Or will Ava Paige get her way?" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(30).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Walk Hard: The Dewey...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2007</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Comedy,Music" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 36m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="The up-and-down-and-up-again story of musician Dewey Cox, whose songs would change a nation. On his rock &#39;n roll spiral, Cox sleeps with 411 women, marries three times, has 36 kids, stars in his own 70s TV show, collects friends ranging from Elvis to the Beatles to a chimp, and gets addicted to - and then kicks - every drug known to man; but despite it all, Cox grows into a national icon and eventually earns the love of a good woman - longtime backup singer Darlene." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(37).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Post...</h3>
+                        <strong>Rate:</strong><span>7.2</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Biography,Drama,History,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 56m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="When American military analyst, Daniel Ellsberg, realizes to his disgust the depths of the US government&#39;s deceptions about the futility of the Vietnam War, he takes action by copying top-secret documents that would become the Pentagon Papers. Later, Washington Post owner, Kay Graham, is still adjusting to taking over her late husband&#39;s business when editor Ben Bradlee discovers the New York Times has scooped them with an explosive expose on those papers. Determined to compete, Post reporters find Ellsberg himself and a complete copy of those papers. However, the Post&#39;s plans to publish their findings are put in jeopardy with a Federal restraining order that could get them all indicted for Contempt. Now, Kay Graham must decide whether to back down for the safety of her paper or publish and fight for the Freedom of the Press. In doing so, Graham and her staff join a fight that would have America&#39;s democratic ideals in the balance." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(38).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Anthem of the He...</h3>
+                        <strong>Rate:</strong><span>6.2</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama,Family" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 59m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Takumi is on his class&#39; community outreach group. His teacher assigns more students to the group including a student who, due to a mishap, has foregone speaking. The class has to perform a musical, but volunteers brave enough to perform are hard to come by. The reluctance slowly begins to wash away when the aforementioned girl makes an effort to perform. As the day of the performance approaches will the students be able to overcome their reluctance and go for it?" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(41).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Petals on the Wind...</h3>
+                        <strong>Rate:</strong><span>6.3</span> <br>
+                        <strong>Year:</strong><span>2014</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama,Horror,Romance,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 25m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="A decade after Cathy, Christopher, and Carrie escaped from their grandparents&#39; attic at Foxworth Hall, Petals on the Wind continues to follow the twisted plight of the family as they attempt to put their sordid past behind them, but soon discover certain secrets can&#39;t be left behind. When Cathy finds herself in an abusive relationship with a fellow dancer, Julian, Christopher and Cathy are forced to face the forbidden feelings they developed for one another while coming of age during captivity. But when tragedy strikes the Dollangangers once again, Cathy returns to Foxworth Hall to confront her grandmother and seek revenge on her mother with a plan to seduce her husband Bart. When Christopher runs to Cathy&#39;s side, the two are determined to start over again - together." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(47).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Froning: The Fittest...</h3>
+                        <strong>Rate:</strong><span>6.7</span> <br>
+                        <strong>Year:</strong><span>2015</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 39m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Rich Froning Jr. is a legend in CrossFit and the Sport of Fitness. In this biopic, take a look at his childhood, follow his quest for a fourth CrossFit Games title, and see him as a son, a husband and a new father." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(49).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Other Side of He...</h3>
+                        <strong>Rate:</strong><span>6.5</span> <br>
+                        <strong>Year:</strong><span>2001</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Adventure,Biography,Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 53m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="John H. Groberg, a middle class kid from Idaho Falls, crosses the Pacific to become a Mormon missionary in the remote and exotic Tongan island kingdom during the 1950&#39;s. He leaves behind a loving family and the true love of his life, Jean. Through letters and musings across the miles, John shares his humbling and sometimes hilarious adventures with " the="" girl="" back="" home",="" and="" her="" letters="" buoy="" up="" his="" spirits="" in="" difficult="" times.="" john="" must="" struggle="" to="" overcome="" language="" barriers,="" physical="" hardship="" deep-rooted="" suspicion="" earn="" trust="" love="" of="" tongan="" people="" he="" has="" come="" serve.="" throughout="" adventure-filled="" three="" years="" on="" islands,="" discovers="" friends="" wisdom="" most="" unlikely="" places.="" h.="" groberg's="" odyssey="" will="" change="" life="" forever."="" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(52).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Commuter...</h3>
+                        <strong>Rate:</strong><span>6.3</span> <br>
+                        <strong>Year:</strong><span>2018</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Crime,Drama,Mystery,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 45m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Now a hard-working life insurance salesman and a caring family man, the former police officer, Michael MacCauley, has taken the commuter rail to New York for the past ten years. But, unexpectedly, things will take a turn for the worse, when on one of his daily journeys, the cryptic passenger, Joanna, makes Michael a generous and tempting offer to locate a single commuter or face grave consequences. Is this a sick joke, or is this indeed a serious situation? As Michael races against the clock to solve this wicked conundrum, everyone aboard is a suspect, in a deal where there&#39;s definitely more than meets the eye. Can he decide in time who&#39;s the one?" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(55).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The China Hustle...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 22m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="An unsettling and eye-opening Wall Street horror story about Chinese companies, the American stock market, and the opportunistic greed behind the biggest heist you&#39;ve never heard of." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(56).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Lost Brother...</h3>
+                        <strong>Rate:</strong><span>6.7</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Crime,Drama,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 52m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Cetarti, a public employee who has just been fired, travels from Buenos Aires to Lapachito, a lonely town in the Chaco province. He must take care of the corpses of his mother and brother who have been brutally murdered, and with whom no bond of affection binds him. The only thing that mobilizes Cetarti to undertake the trip is the possibility of charging a modest life insurance to be able to settle in Brazil. There he meets Duarte, a sort of town capo and friend of his mother&#39;s murderer, with whom he establishes a strange society to manage and collect that money." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(57).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Redeemed and the...</h3>
+                        <strong>Rate:</strong><span>7.1</span> <br>
+                        <strong>Year:</strong><span>2018</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 59m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="In 2017 the fittest athletes on Earth took on the unknown and unknowable during four of the most intense days of competition in CrossFit Games history. " the="" redeemed="" and="" dominant:="" fittest="" on="" earth="" "="" captures="" all="" drama="" as="" top="" athletes="" resembling="" chiseled="" grecian="" gods="" descend="" madison,="" wisconsin,="" to="" face="" a="" series="" of="" trials.="" hercules="" faced="" 12;="" they="" take="" 13.="" emotions="" run="" high="" throng="" australian="" rise="" top.="" by="" end="" competition,="" some="" learn="" tough="" lessons-that="" that="" glitters="" isn't="" gold,="" or="" even="" bronze-and="" they're="" stronger="" than="" realized.="" best="" among="" them="" enter="" pantheon="" crossfit="" giants="" earn="" right="" call="" themselves="" "fittest="" earth."="" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(62).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>After the Storm...</h3>
+                        <strong>Rate:</strong><span>7.4</span> <br>
+                        <strong>Year:</strong><span>2016</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Comedy,Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 58m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Dwelling on his past glory as a prize-winning author, Ryota (Hiroshi Abe) wastes the money he makes as a private detective on gambling and can barely pay child support. After the death of his father, his aging mother (Kirin Kiki) and beautiful ex-wife (Yoko Make) seem to be moving on with their lives. Renewing contact with his initially distrusting family, Ryota struggles to take back control of his existence and to find a lasting place in the life of his young son (Taiyo Yoshizawa) - until a stormy summer night offers them a chance to truly bond again." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(63).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Mary and the Witch's...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Adventure,Animation,Family,Fantasy" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 42m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Mary is an ordinary young girl stuck in the country with her Great-Aunt Charlotte and seemingly no adventures or friends in sight. She follows a mysterious cat into the nearby forest, where she discovers an old broomstick and the strange Fly-by-Night flower, a rare plant that blossoms only once every seven years and only in that forest. Together the flower and the broomstick whisk Mary above the clouds and far away to Endor College - a school of magic run by headmistress Madam Mumblechook and the brilliant Doctor Dee. But there are terrible things happening at the school, and, when Mary tells a lie, she must risk her life to try to set things right. Based on Mary Stewart&#39;s 1971 classic children&#39;s book " the="" little="" broomstick",="" "mary="" and="" witch's="" flower"="" is="" an="" action-packed="" film="" full="" of="" jaw-dropping="" imaginative="" worlds,="" ingenious="" characters,="" stirring,="" heartfelt="" story="" a="" young="" girl="" trying="" to="" find="" place="" in="" world.="" featuring="" voices="" ruby="" barnhill="" academy="" ..."="" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(64).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Last Movie Star...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 34m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="An aging former movie star is forced to face the reality that his glory days are behind him. On its surface, the film is a tale about faded fame. At its core, it&#39;s a universal story about growing old." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(68).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Third Murder...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama,Mystery" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 4m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Misumi has a criminal record dating back many years and is now under the spotlight again. It looks like an open and shut case, for Misumi has confessed to the new charge. Enter prominent lawyer Shigemori, who harbours other ideas, which could mean the difference between life and death." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(60).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Coming Days...</h3>
+                        <strong>Rate:</strong><span>6.3</span> <br>
+                        <strong>Year:</strong><span>2010</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama,Sci-Fi" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 5m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="In the near future the dreams of three adult siblings living in Germany are fractured by difficult romantic relationships and the unwitting involvement with an underground organization through a growing worldwide panic over the few remaining oil fields in Asia." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(69).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Ichi the Killer...</h3>
+                        <strong>Rate:</strong><span>7.1</span> <br>
+                        <strong>Year:</strong><span>2001</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Comedy,Crime,Drama,Horror" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 9m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="When a Yakuza boss named Anjo disappears with 300 million yen, his chief henchman, a sadomasochistic man named Kakihara, and the rest of his mob goons go looking for him. After capturing and torturing a rival Yakuza member looking for answers, they soon realize they have the wrong man and begin looking for the man named Jijii who tipped them off in the first place. Soon enough Kakihara and his men encounter Ichi, a psychotic, sexually-repressed young man with amazing martial arts abilities and blades that come out of his shoes. One by one Ichi takes out members of the Yakuza and all the while Kakihara intensifies his pursuit of Ichi and Ichi&#39;s controller Jijii. What will happen as the final showdown happens between the tortured and ultra-violent Ichi and the pain-craving Kakihara?" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(70).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Boy with the Top...</h3>
+                        <strong>Rate:</strong><span>6.7</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 30m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="One-off drama based on the critically acclaimed memoirs of British journalist Sathnam Sanghera. A touching, humorous and emotional rites-of-passage story." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(76).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>All the Money in the...</h3>
+                        <strong>Rate:</strong><span>6.9</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Biography,Crime,Drama,Mystery,Thriller" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 12m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Rome, 1973. Masked men kidnap a teenage boy named John Paul Getty III (Charlie Plummer). His grandfather, Jean Paul Getty (Christopher Plummer), is the richest human in the world, a billionaire oil magnate, but he&#39;s notoriously miserly. His favorite grandson&#39;s abduction is not reason enough for him to part with any of his fortune. All the Money in the World (2017) follows Gail, (Michelle Williams), Paul&#39;s devoted, strong-willed mother, who unlike Getty, has consistently chosen her children over his fortune. Her son&#39;s life in the balance with time running out, she attempts to sway Getty even as her son&#39;s mob captors become increasingly more determined, volatile and brutal. When Getty sends his enigmatic security man Fletcher Chace (Mark Wahlberg) to look after his interests, he and Gail become unlikely allies in this race against time that ultimately reveals the true and lasting value of love over money." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(77).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Chasing the Dragon...</h3>
+                        <strong>Rate:</strong><span>6.9</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Biography,Crime,History" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 8m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="The year is 1963, an illegal immigrant named Ho (Donnie Yen) sneaks into British-ruled Hong Kong. Equipped with guts and combat skills, he plunges into the underground world getting into constant conflict with rivals. After many adversaries, the once good-natured man is physically crippled and turns into a monster more atrocious than all the most corrupted cops and ruthless drug dealers. Ho eventually emerges as the most powerful drug lord under the control of Chief Detective Sergeant, Lee Rock (Andy Lau). However, with the establishment of Independent Commission Against Corruption (ICAC) by the law enforcement in 1974, Rock is forced into premature retirement. But Ho still insists he would not be stopped as he determines to become the sole dictator of the drug empire." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(83).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Still the Water...</h3>
+                        <strong>Rate:</strong><span>6.8</span> <br>
+                        <strong>Year:</strong><span>2014</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Drama,Romance" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>2h 1m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="On the subtropical Japanese island of Amami, traditions about nature remain eternal. During the full-moon night of traditional dances in August, 16-year-old Kaito discovers a dead body floating in the sea. His girlfriend Kyoko will attempt to help him understand this mysterious discovery. Together, Kaito and Kyoko will learn to become adults by experiencing the interwoven cycles of life, death and love." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(86).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Greatest Showman...</h3>
+                        <strong>Rate:</strong><span>7.8</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Biography,Drama,Musical,Romance" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 45m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Orphaned, penniless but ambitious and with a mind crammed with imagination and fresh ideas, the American Phineas Taylor Barnum will always be remembered as the man with the gift to effortlessly blur the line between reality and fiction. Thirsty for innovation and hungry for success, the son of a tailor will manage to open a wax museum but will soon shift focus to the unique and peculiar, introducing extraordinary, never-seen-before live acts on the circus stage. Some will call Barnum&#39;s wide collection of oddities, a freak show; however, when the obsessed showman gambles everything on the opera singer Jenny Lind to appeal to a high-brow audience, he will somehow lose sight of the most important aspect of his life: his family. Will Barnum risk it all to be accepted?" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(89).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Along for the Ride...</h3>
+                        <strong>Rate:</strong><span>7</span> <br>
+                        <strong>Year:</strong><span>2016</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 30m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="A documentary about Dennis Hopper." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(92).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Witness...</h3>
+                        <strong>Rate:</strong><span>7.1</span> <br>
+                        <strong>Year:</strong><span>2015</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Biography,Crime,Documentary,Mystery" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 29m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Bill Genovese&#39;s decade-long journey to unravel the truth about the mythic death and little-known life of his sister, Kitty, who was reportedly stabbed in front of 38 witnesses and became the face of urban apathy. THE WITNESS begins in 2004 when The Times questions its original story: the number of witnesses, what they observed, the number of attacks. None was more affected by the story than Bill. He vowed not to be like the 38, volunteered for Vietnam, and lost both legs. What if Kitty&#39;s mythic story is an urban myth? Breaking his family&#39;s half-century of silence, Bill seeks to find the truth confronting the witnesses, the killer, their families and his own. THE WITNESS is about bearing witness, loss and forgiveness, and what we owe each other." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(94).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Ferrari 312B: Where ...</h3>
+                        <strong>Rate:</strong><span>7</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Documentary,History,Sport" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 25m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="In a race against time and all odds, the revolutionary F1 racing car Ferrari 312B will get back on the Monaco circuit, 46 years later, under the wing of it&#39;s creator, the genius engineer Mauro Forghieri." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(95).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>The Monkey King 2...</h3>
+                        <strong>Rate:</strong><span>6</span> <br>
+                        <strong>Year:</strong><span>2016</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Adventure,Fantasy" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 59m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="When a travelling monk is stranded in a wasteland, The Monkey King must escort him across the land to retrieve sacred scriptures and protect him from an evil demon." class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div><div class="card">
+                    <img src="./Movie_files/maxresdefault(96).jpg" alt="img">
+                    <div class="card-body">
+                        <h3>Fairy Tail: The Movi...</h3>
+                        <strong>Rate:</strong><span>7.5</span> <br>
+                        <strong>Year:</strong><span>2017</span> <br>
+                        <strong>Language:</strong><span>English</span> <br>
+                        <strong>Genres:</strong><span title="Action,Adventure,Animation,Comedy,Fantasy" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Duration:</strong><span>1h 25m</span>
+                        <div class="card-buttons">
+
+                            <label id="like-label" for="like-film">
+                                <input id="like-film" type="checkbox">
+                            </label>
+
+                            <button title="Dragon Cry" -="" it's="" a="" magic="" artifact,="" that="" power="" can="" destroy="" the="" world.="" for="" long="" time="" she="" was="" kept="" in="" kingdom="" of="" fiore,="" but="" end="" stolen="" by="" stella.="" main="" characters="" (natsu,="" lucy,="" gray,="" erza,="" wendy,="" happy="" and="" carla)="" penetrate="" into="" on="" mission="" undercover.="" they="" will="" have="" to="" deal="" with="" king="" animus="" his="" entourage="" (zach="" sonya).="" purpose="" enslave="" world?="" sonya="" secretly="" trying="" save="" country?="" expect="" exciting="" adventures="" sea="" intrigue="" world."="" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                        </div>
+                    </div>
+                    
+                
+</div></div>
+        </div>
+    </section>
+
+</main>
+
+<!----------------------------------Footer-------------------------------------->
+<footer class="p-4 bg-[#FA7070]">
+    <div class="container">
+        <p class="text-center text-bold text-[24px] text-white"><span id="year">2024</span> ©Copyright All movies</p>
+    </div>
+</footer>
+
+
+
+<!--------------------------------------Javascript links-------------------------------->
+    <script src="./Movie_files/lang.js"></script>
+    <script src="./Movie_files/utilities.js"></script>
+    <script src="./Movie_files/db.js"></script>
+    <script src="./Movie_files/index.js"></script>
+
+</body></html>
