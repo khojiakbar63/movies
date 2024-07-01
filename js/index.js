@@ -15,6 +15,9 @@ const optionText = $('#option-text')
 const multiSearchBtn = $('#multi-search-btn')
 const genres = $('#genres')
 const form = $('#form')
+const yearLabel = $('#year-label')
+const years = $('#years')
+const yearDis = yeardis
 // CUT 100 MOVIES FROM ORIGINAL DB
 const hundredMovies = movies.slice(0, 100)
 
@@ -50,6 +53,8 @@ selectLang.addEventListener('change', (e)=>{
     labelGenre.textContent = lang[e.target.value].multiSearchLabelGenre
     optionText.textContent = lang[e.target.value].multiSearchInputPlaceholderGenre
     multiSearchBtn.textContent = lang[e.target.value].multiSearchBtn
+    yearLabel.textContent = lang[e.target.value].yearLabel
+    yearDis.textContent = lang[e.target.value].years
 })
 
 // Rendering function 
@@ -67,8 +72,9 @@ function renderData(data) {
                         <strong>Rate:</strong><span>${el.rate}</span> <br>
                         <strong>Year:</strong><span>${el.year}</span> <br>
                         <strong>Language:</strong><span>${el.language}</span> <br>
-                        <strong>Genres:</strong><span title="${el.genres}" id="hover" class="animate-bounce text-[#424874]">Hover me</span> <br>
+                        <strong>Genres:</strong><span title="${el.genres}" id="hover" class="animate-pulse text-[#424874]">Hover me</span> <br>
                         <strong>Duration:</strong><span>${el.duration}</span>
+                        <strong>Youtube:</strong><span class="pointer">${el.youtube}</span>
                         <div class="card-buttons">
 
                             <label id="like-label" for="like-film">

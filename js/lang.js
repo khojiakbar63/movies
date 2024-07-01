@@ -6,8 +6,9 @@ const lang = {
         multiSearchLabelGenre: 'Select genre:',
         multiSearchInputPlaceholderTitle: 'Enter film title',
         multiSearchInputPlaceholderGenre: 'Select genre...',
-        multiSearchBtn: 'Search'
-
+        multiSearchBtn: 'Search',
+        yearLabel: 'Select year',
+        years: 'Select year...'
 
     },
     kr: {
@@ -17,7 +18,10 @@ const lang = {
         multiSearchLabelGenre: '장르 선택:',
         multiSearchInputPlaceholderTitle: '영화 제목을 입력하세요',
         multiSearchInputPlaceholderGenre: '장르를 선택하세요...',
-        multiSearchBtn: '찾다'
+        multiSearchBtn: '찾다',
+        yearLabel: '연도 선택',
+        years: '연도 선택...'
+
     },
     ar: {
         globalSearchPlaceholder: 'أدخل عنوان الفيلم...',
@@ -26,6 +30,9 @@ const lang = {
         multiSearchLabelGenre: 'اختر النوع:',
         multiSearchInputPlaceholderTitle: 'أدخل عنوان الفيلم',
         multiSearchInputPlaceholderGenre: 'اختر النوع...',
-        multiSearchBtn: 'يبحث'
+        multiSearchBtn: 'يبحث',
+        yearLabel: 'اختر السنة',
+        years: 'اختر السنة...'
+
     }
 }
