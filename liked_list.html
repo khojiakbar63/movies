@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liked List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--    Favicon link-->
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <!--Exo font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/liked_list.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body class="bg-[#1B4242]">
+<!--Toaster-->
+<div id="toaster" class="toaster">
+    <div class="toaster-start">
+        <i class="fa-regular fa-circle-check"></i>
+    </div>
+    <div class="toaster-middle">
+    </div>
+    <div class="toaster-end">
+        <i id="hide-btn" class="fa-regular fa-circle-xmark"></i>
+    </div>
+</div>
+
+    <a href="index.html" id="go-back" class="text-[50px] text-white m-4 p-1 px-4 bg-[#535C91] rounded hover:bg-[#344955] duration-[0.1s]">
+       <i class="fa-solid fa-angle-left"></i>
+    </a>
+
+    <div class="container">
+        <h1 class="text-[54px] text-[900] text-white p-4 underline mt-[30px] mb-[40px]">Liked Videos List</h1>
+        <div class="card-items flex flex-wrap  space-between gap-4"></div>
+    </div>
+
+
+    <script src="js/toaster.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/liked_list.js"></script>
+
+</body>
+</html>

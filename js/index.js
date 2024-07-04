@@ -17,10 +17,13 @@ const genres = $('#genres')
 const form = $('#form')
 const yearLabel = $('#year-label')
 const years = $('#years')
-const yearDis = yeardis
+const addLikeBtn = $('#add-like')
+const readMore =  $('#read-more')
+const likesCount = $('#likes-count')
+const heartBtn = $('#heart-btn')
+
 // CUT 100 MOVIES FROM ORIGINAL DB
 const hundredMovies = movies.slice(0, 100)
-
 // NORMALIZED DATA
 const normalizedData = hundredMovies.map(movie => {
     return {
@@ -34,9 +37,10 @@ const normalizedData = hundredMovies.map(movie => {
         youtube: `youtube.com/embed/${movie.youtubeId}`,
         summary: movie.summary,
         smallImg: movie.smallImg,
-        bigImg: movie.bigThumbnail,
+        bigImg: movie.bigThumbnail
     }
 })
+
 // ------------------------ THEME ------------------------
 themeSwitcher.addEventListener('change', (e)=>{
     header.classList.toggle('dark')
@@ -74,14 +78,13 @@ function renderData(data) {
                         <strong>Language:</strong><span>${el.language}</span> <br>
                         <strong>Genres:</strong><span title="${el.genres}" id="hover" class="animate-pulse text-[#424874]">Hover me</span> <br>
                         <strong>Duration:</strong><span>${el.duration}</span>
-                        <strong>Youtube:</strong><span class="pointer">${el.youtube}</span>
                         <div class="card-buttons">
 
-                            <label id="like-label" for="like-film">
-                                <input id="like-film" type="checkbox">
-                            </label>
+                         
+                            
+                            <button data-like="${el.id}" id="add-like"></button>
 
-                            <button title="${el.summary}" class="read-more-btn hover:text-[#597445]">Read more...</button>
+                            <button data-id="${el.id}" id="read-more" class="read-more-btn hover:text-[#597445]">Read more...</button>
                         </div>
                     </div>
                     
@@ -165,19 +168,40 @@ form.addEventListener('submit', (e) => {
 })
 
 
+// Event delegation
 
+cards.addEventListener('click', (e) => {
+    if(e.target.getAttribute('id') === 'read-more'  && e.target.tagName  === 'BUTTON') {
+        const id = e.target.getAttribute('data-id')
+        console.log(id)
+        localStorage.setItem('film-id', id)
+        location.href='./read_more.html'
+    }
 
+    if(e.target.getAttribute('id') === 'add-like' ) {
+        let likedList = JSON.parse(localStorage.getItem('liked-list')) || []
+        const id = e.target.getAttribute('data-like')
+        if(!likedList.includes(id)) {
+            likedList.push(id)
+            localStorage.setItem('liked-list', JSON.stringify(likedList))
+            renderLikesCount(likedList)
+            makeToaster('success', `<h2>Congratulations, this video added to the liked list!</h2>`)
 
+        } else{
+            makeToaster('error', `<h2>Oops, this video is already added to the liked list!</h2>`)
+            
+            
+        }
 
+    }
+})
 
+function renderLikesCount (data){
+    data = JSON.parse(localStorage.getItem('liked-list')) || []
+    likesCount.textContent = data.length
+}
 
-
-
-
-
-
-
-
+renderLikesCount(JSON.parse(localStorage.getItem('liked-list')))
 
 
 

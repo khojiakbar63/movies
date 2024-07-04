@@ -33,10 +33,10 @@
             <ul class="flex items-center gap-[30px]">
                 
                 <li class="hidden lg:block likes-wrapper">
-                    <div id="liked" class="flex items-center text-white gap-2">
-                        <span><i id="header-heart" class="fa-regular fa-heart animate-pulse"></i></span>
+                    <a href="liked_list.html" id="liked" class="flex items-center text-white gap-2">
+                        <span id="heart-btn"><i id="header-heart" class="fa-regular fa-heart animate-pulse"></i></span>
                         <span id="likes-count" class="font-bold text-[32px] text-[#FEFDED]">0</span>
-                    </div>
+                    </a>
                 </li>
                 
                 <li class="hidden md:block">
@@ -59,9 +59,19 @@
     </div>
 </header>
 
-
+<div id="toaster" class="toaster">
+    <div class="toaster-start">
+        <i class="fa-regular fa-circle-check"></i>
+    </div>
+    <div class="toaster-middle">
+    </div>
+    <div class="toaster-end">
+        <i id="hide-btn" class="fa-regular fa-circle-xmark"></i>
+    </div>
+</div>
 <!---------------------------------------Main-------------------------------------->
 <main class="flex">
+
 <!----------------------------------Sidebar-------------------------------------->
     <aside id="sidebar" class="hidden sm:block w-[250px] h-screen pt-[80px] sticky top-0 left-0">
         <form action="#" id="form" class="p-2 text-[#FEFDED] flex flex-column gap-[20px]">
@@ -94,7 +104,7 @@
     </aside>
 
 <!----------------------------------Content-------------------------------------->
-    <section id="content" class="pt-[80px]">
+    <section id="content" class="pt-[0px]">
         <div class="container flex">
             <div id="cards" class=" p-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 m-0">
 
@@ -117,6 +127,7 @@
 
 
 <!--------------------------------------Javascript links-------------------------------->
+    <script src="js/toaster.js"></script>
     <script src="js/lang.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/db.js"></script>

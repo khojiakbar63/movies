@@ -125,20 +125,20 @@ body {
 }
 
 
-#like-film{
+#add-like{
     appearance: none;
 }
-#like-film:after{
+#add-like:after{
     font-family: "Font Awesome 5 Free";
     content: "\f004";
     color: #000;
     font-size: 24px;
 }
-#like-film:checked:after {
+#add-like:checked:after {
     color: red;
     font-weight: bold;
 }
-#like-film:after:hover {
+#add-like:after:hover {
     transform: scale(1.2)
 }
 .read-more-btn {
@@ -226,4 +226,103 @@ main {
     background-color: #4B5D67;
     color: #fff;
 }
+
+/*Toaster*/
+.toaster {
+    position: sticky;
+    top: 0;
+    left: 100%;
+    color: #000;
+    border: none;
+    width: 700px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    transform: scale(0);
+    z-index: 999999999999;
+}
+.toaster .toaster-start {
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toaster .toaster-middle  {
+    padding-right: 180px;
+}
+.toaster .toaster-end {
+    font-size: 28px;
+    width: 50px;
+}
+
+
+.bg-success {
+    background-color: #95D2B3;
+}
+.bg-error {
+    background-color: #EE4E4E;
+}
+.bg-warning {
+    background-color: #F4CE14;
+}
+.color-success {
+    color: #95D2B3;
+}
+.color-error {
+    color: #EE4E4E;
+}
+.color-warning {
+    color: #F4CE14;
+}
+
+.show {
+    animation: animateToaster 0.5s linear forwards;
+}
+
+/*Animation*/
+@keyframes animateToaster {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
