@@ -36,22 +36,18 @@ function renderData(data) {
             cards.innerHTML = ''
             data.forEach((el) => {
                 const newContent = `
-
-                    <h1 id="title" class="text-center">${el.title}</h1>
-                       
-                     <iframe 
-                        title="Iframe Example"
-                        width="560" 
-                        height="315" 
-                        src="${el.youtube}" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe title="New Title"
+                        src="youtube.com/embed/7Pa_Weidt08";
+                        frameborder="0";
+                        width: 400px;
+                        height: 815px;
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
-                        <video src="https://youtu.be/gZakmIseQWw?si=8ix8e5EPv5v4KKml"></video>
                      </iframe>
-                    
+                    <h1 id="title" class="text-center">${el.title}</h1>
+                  
                     <div class="card-body">
-                        <h3>${el.title}</h3>
+                        <h1>${el.youtube}</h1>
                         <strong>Rate:</strong><span>${el.rate}</span> <br>
                         <strong>Year:</strong><span>${el.year}</span> <br>
                         <strong>Language:</strong><span>${el.language}</span> <br>
